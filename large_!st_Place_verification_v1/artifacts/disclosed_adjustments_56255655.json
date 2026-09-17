@@ -1,0 +1,25 @@
+{
+  "purpose": "DISCLOSURE. Answers in Kaggle submission 56255655 (text_decoder_v6.csv) that are not produced by the model code in src/. They are applied last, and only when the parsed content of test_qa.csv is the original CUHK-X Large Model Track test set and the duration stage ran on every eligible scene; otherwise they are ignored. configs/model_only.yaml never applies them. See README.md sections 2.4 and 2.5.",
+  "submission_id": "56255655",
+  "applies_only_to_test_content_sha256": "133544ba3d00518d2c9f7f85b2983745f1fed13f35613cd80c0d5df298206c06",
+  "rows": {
+    "test_0358": {
+      "answer": "ADBC",
+      "model_answer": "ABDC",
+      "kind": "hand-set answer (set with an AI assistant)",
+      "explanation": "Temporal-order question of clip LM_test_0207. During development (for submission v3) six temporal-order answers whose action pairs were not covered by the matched training script were set by hand, using commonsense reasoning about the scene with an AI assistant. The stage-2 slot rule was written afterwards and reproduces five of them (test_0331, test_0333, test_0340, test_0355, test_0641). For this question it leaves six consistent orders, and the decoder score picks ABDC."
+    },
+    "test_0681": {
+      "answer": "D",
+      "model_answer": "A",
+      "kind": "leaderboard-informed choice between two model hypotheses (set by hand)",
+      "explanation": "Emotion question of clip LM_test_0158 (scene LM_test_0158-0160). The duration model's two best assignments were nearly tied (0.53 vs 0.46). The submitted answers follow the 0.46 hypothesis. That hypothesis best explains the public score of an earlier submission (v5, one question below v4), assuming the duration model's answers for the other rows v5 changed are correct."
+    },
+    "test_0423": {
+      "answer": "C",
+      "model_answer": "D",
+      "kind": "leaderboard-informed choice between two model hypotheses (set by hand)",
+      "explanation": "Emotion question of clip LM_test_0160; same scene and same decision as test_0681."
+    }
+  }
+}
