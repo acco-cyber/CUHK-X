@@ -4,7 +4,7 @@ Structure-aware multiple-choice decoder for the CUHK-X Large Model Track (VQA). 
 and uses **no GPU, no network, no API and no neural checkpoint**. A run over the test set takes a few seconds on one
 CPU core.
 
-![architecture](docs/architecture.svg)
+![architecture](Architecture_Diagram_of_V6)
 
 ## 0 Needs attention (answer first)
 
