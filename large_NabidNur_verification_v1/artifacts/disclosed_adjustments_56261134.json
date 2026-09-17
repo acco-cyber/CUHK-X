@@ -1,0 +1,31 @@
+{
+  "purpose": "DISCLOSURE. Answers in Kaggle submission 56261134 (text_decoder_v7A.csv) that are not produced by the model code in src/. They are applied last, and only when the parsed content of test_qa.csv is the original CUHK-X Large Model Track test set and the duration stage ran on every eligible scene; otherwise they are ignored. configs/model_only.yaml never applies them. See README.md sections 2.4 and 2.5.",
+  "submission_id": "56261134",
+  "applies_only_to_test_content_sha256": "133544ba3d00518d2c9f7f85b2983745f1fed13f35613cd80c0d5df298206c06",
+  "rows": {
+    "test_0358": {
+      "answer": "ADBC",
+      "model_answer": "ABDC",
+      "kind": "hand-set answer (set with an AI assistant)",
+      "explanation": "Same as in submission 56255655: a temporal-order answer set by hand during development that the stage-2 slot rule does not reproduce."
+    },
+    "test_0681": {
+      "answer": "D",
+      "model_answer": "A",
+      "kind": "leaderboard-informed choice between two model hypotheses (set by hand)",
+      "explanation": "Same as in submission 56255655 (scene LM_test_0158-0160)."
+    },
+    "test_0423": {
+      "answer": "C",
+      "model_answer": "D",
+      "kind": "leaderboard-informed choice between two model hypotheses (set by hand)",
+      "explanation": "Same as in submission 56255655 (scene LM_test_0158-0160)."
+    },
+    "test_0430": {
+      "answer": "A",
+      "model_answer": "B",
+      "kind": "leaderboard-informed answer (set by hand)",
+      "explanation": "Emotion question of the single-clip scene LM_test_0168. The stage-4 rule answers B (Quickly). The clip's duration and video bitrate suggest it is not the hurried repeat. A (Attentively) was chosen because it had the highest posterior (about 0.5) in a consistency analysis over the team's earlier public-leaderboard scores (rejection sampling over answer hypotheses), and in that analysis it could not lower the public score. This row is the only difference from submission 56255655. Both submissions scored 0.99707 public and 0.98529 private, so neither B nor A is the correct answer. The scores do not reveal whether the row is public or private."
+    }
+  }
+}
