@@ -1,4 +1,4 @@
-# Team Nabid Nur · CUHK-X Large Model Track
+# Structure-Aware Probabilistic Video-QA Decoder
 
 > **Structure-aware VQA decoder with duration-aware manner inference**
 >
