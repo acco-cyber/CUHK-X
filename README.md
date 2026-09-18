@@ -81,7 +81,7 @@ The companion notebook reports `0.99707 (341/342)` on the public leaderboard for
 <summary><strong>Open full architecture diagram</strong></summary>
 
 <p align="center">
-  <img src="docs/architecture.svg" alt="CUHK-X Large Model Track v6 architecture" width="1100">
+  <img src="Architecture_Diagram_of_V6" alt="CUHK-X Large Model Track v6 architecture" width="1100">
 </p>
 
 The diagram is organized as a research pipeline:
