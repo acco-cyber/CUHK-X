@@ -1,5 +1,4 @@
 # Structure-Aware Probabilistic Video-QA Decoder
-(LB-01)
 > **Structure-aware VQA decoder with duration-aware manner inference**
 >
 > A deterministic, CPU-only solution that treats the benchmark as a structured inference problem rather than a generic vision-language generation task. The system reconstructs scene scripts from the labelled training set, decodes questions jointly, and uses exact IR-video duration metadata to resolve a small set of ambiguous manner assignments.
